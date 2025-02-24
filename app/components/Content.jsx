@@ -129,8 +129,8 @@ const Content = () => {
     const thirdDays = generateDays(7, 3);
 
     return (
-        <div className='cursor-default mx-auto items-center flex m-5 justify-center'>
-            <div className='p-5 rounded-lg w-full md:w-1/2 backdrop-blur-xl bg-black/10'>
+        <div className='cursor-default mx-auto items-center flex m-5  justify-center'>
+            <div className='md:p-5 p-2 rounded-lg w-full md:w-1/2 m-2 backdrop-blur-xl bg-black/10'>
                 <div className="relative flex m-auto justify-center from-black bg-gradient-to-tr gap-2 to-black/70 rounded-xl mb-5 p-5">
                     <Link target='_blank' href='https://www.facebook.com/profile.php?id=100085627053543'>
                         <RiFacebookCircleFill className='text-4xl text-white hover:ease-in-out hover:scale-125 transition hover:text-blue-500 top-5 right-5 cursor-pointer absolute'></RiFacebookCircleFill>
@@ -147,7 +147,7 @@ const Content = () => {
                             <input placeholder='' onChange={(e) => { setName(e.target.value) }} value={name} dir='rtl' className='overflow-hidden text-ellipsis focus:outline-none rounded-r-xl w-full font-arabicUI2 text-2xl md:text-4xl p-4' type="text" />
                         </div>
                         <div className="titlehead2 mt-5 px-4 py-5 bg-white flex flex-col gap-3 rounded-md shadow-[0px_0px_15px_rgba(0,0,0,0.09)]">
-                            <legend className="font-arabicUI2 text-2xl md:text-3xl mb-3 select-none flex place-items-center mx-auto justify-center gap-2" dir='rtl'>اختار كليتك <FaUniversity /></legend>
+                            <legend className="font-arabicUI2 text-3xl md:text-3xl mb-3 select-none flex place-items-center mx-auto justify-center gap-2" dir='rtl'>اختار كليتك <FaUniversity /></legend>
                             <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
                                 {collegs.map((colleg) => (
                                     <label
@@ -155,7 +155,7 @@ const Content = () => {
                                         htmlFor={colleg.name}
                                         name={colleg.name}
                                         dir='rtl'
-                                        className="cursor-pointer font-arabicUI2 text-xl md:text-2xl transition h-14 relative hover:bg-zinc-100 flex items-center px-3 gap-3 rounded-lg has-[:checked]:text-blue-500 has-[:checked]:bg-blue-50 has-[:checked]:ring-blue-300 has-[:checked]:ring-1 select-none"
+                                        className="cursor-pointer font-arabicUI2 text-2xl md:text-2xl transition h-14 relative hover:bg-zinc-100 flex items-center px-3 gap-3 rounded-lg has-[:checked]:text-blue-500 has-[:checked]:bg-blue-50 has-[:checked]:ring-blue-300 has-[:checked]:ring-1 select-none"
                                     >
                                         <span className='flex gap-2 place-items-center m-6'>
                                             {colleg.name}
@@ -175,7 +175,7 @@ const Content = () => {
                             </div>
                             <hr />
                             <div className='titlehead'>
-                                <h3 dir='rtl' className='place-items-center flex gap-2 justify-center font-arabicUI2 text-white text-2xl md:text-4xl'>اختار اليوم المناسب معاك <FaRegCalendarDays /></h3>
+                                <h3 dir='rtl' className='place-items-center flex gap-2 justify-center font-arabicUI2 text-white text-3xl md:text-4xl'>اختار اليوم المناسب معاك <FaRegCalendarDays className=' text-4xl' /></h3>
                             </div>
                             <div className="radio-inputs font-arabicUI3">
                                 {firstDays.map((day, index) => (
@@ -220,7 +220,7 @@ const Content = () => {
                                 ))}
                             </div>
                             <button onClick={handleClick} className='buttonn group'>
-                                <span dir='rtl' className='m-auto justify-center gap-3 font-arabicUI2 flex text-white text-lg md:text-5xl place-items-center'>حجز معاد لتسليم الملف <MdOutlineAccessTimeFilled className='text-4xl group-hover:animate-spin'></MdOutlineAccessTimeFilled></span>
+                                <span dir='rtl' className='m-auto justify-center gap-3 font-arabicUI2 flex text-white text-4xl md:text-5xl place-items-center'>حجز معاد لتسليم الملف <MdOutlineAccessTimeFilled className='text-4xl group-hover:animate-spin'></MdOutlineAccessTimeFilled></span>
                             </button>
                         </div>
                     </div>
