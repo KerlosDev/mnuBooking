@@ -38,15 +38,15 @@ const TicetDetils = ({name,selectedCollege,selectedDay}) => {
 
 
                     </div>
-                    <div className='flex gap-4'>
+                    <div className='flex m-auto justify-center gap-4'>
 
                         <div className=' font-arabicUI2 titlehead2 m-4 w-fit mx-auto bg-white p-5 rounded-xl border-black border-4'>
-                            <h4 className=' text-4xl md:text-7xl  font-arabicUI2'>12:00</h4>
-                            <h3 className=' text-4xl md:text-6xl font-arabicUI2'>الساعة</h3>
+                            <h4 className=' text-2xl md:text-7xl  font-arabicUI2'>12:00</h4>
+                            <h3 className=' text-2xl md:text-6xl font-arabicUI2'>الساعة</h3>
                         </div>
                         <div className=' font-arabicUI2 titlehead2 m-4 w-fit mx-auto bg-white p-5 rounded-xl border-black border-4'>
-                            <h4 className=' text-4xl md:text-7xl  font-arabicUI2 mx-auto flex justify-center'>98</h4>
-                            <h3 className=' text-4xl md:text-6xl font-arabicUI2 mx-auto flex justify-center'>ترتيبك</h3>
+                            <h4 className=' text-2xl md:text-7xl  font-arabicUI2 mx-auto flex justify-center'>98</h4>
+                            <h3 className=' text-2xl md:text-6xl font-arabicUI2 mx-auto flex justify-center'>ترتيبك</h3>
                         </div>
                     </div>
                     <div dir='trl' className=' flex font-arabicUI2 titlehead2 mb-4 w-fit mx-auto bg-white p-5 rounded-xl border-black border-4'>
